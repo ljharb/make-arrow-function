@@ -29,7 +29,7 @@ assert(arrowFunctions.every(function (fn) { return typeof fn === 'function'; }))
 Simply clone the repo, `npm install`, and run `npm test`
 
 [package-url]: https://npmjs.org/package/make-arrow-function
-[npm-version-svg]: http://vb.teelaun.ch/ljharb/make-arrow-function.svg
+[npm-version-svg]: http://versionbadg.es/ljharb/make-arrow-function.svg
 [travis-svg]: https://travis-ci.org/ljharb/make-arrow-function.svg
 [travis-url]: https://travis-ci.org/ljharb/make-arrow-function
 [deps-svg]: https://david-dm.org/ljharb/make-arrow-function.svg
