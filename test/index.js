@@ -21,12 +21,19 @@ test('makeArrowFunction.list() is an array', function (t) {
 		'() => 42',
 		'() => function () {}',
 		'() => x => x * x',
-		'x => x * x'
+		'x => x * x',
+		'x => { return x * x; }',
+		'(x, y) => { return x + x; }'
 	];
+	t.plan(1 + 2 * funcs.length);
 	t.equal(Object.prototype.toString.call(funcs), '[object Array]', 'list() is an array');
-	for (var i = 0; i < funcs.length; ++i) {
-		t.equal(typeof funcs[i], 'function', funcs[i] + ' is a function');
-		t.equal(String(funcs[i]), expectedSources[i], '"' + funcs[i] + '" !== "' + expectedSources[i] + '"');
+	if (funcs.length === 0) {
+		t.comment('no arrow functions present');
+	} else {
+		for (var i = 0; i < funcs.length; ++i) {
+			t.equal(typeof funcs[i], 'function', funcs[i] + ' is a function');
+			t.equal(String(funcs[i]), expectedSources[i], '"' + funcs[i] + '" !== "' + expectedSources[i] + '"');
+		}
 	}
 	t.end();
 });
