@@ -1,8 +1,10 @@
-1.0.1 / not yet released
+1.1.0 / 2015-08-17
 =================
-  * All grade A-supported `node`/`iojs` versions now ship with an `npm` that understands `^`.
-  * Run `travis-ci` tests on `iojs` and `node` v0.12; speed up builds; allow 0.8 failures.
-  * Update `is`, `tape`, `jscs`, `nsp`, `editorconfig-tools`; remove unused devDeps
+  * [New] Add arrow functions with explicit block bodies
+  * [Docs] Switch from vb.teelaun.ch to versionbadg.es for the npm version badge SVG
+  * [Dev Deps] update `is`, `tape`, `jscs`, `nsp`, `editorconfig-tools`; remove unused devDeps
+  * [Tests] add `npm run eslint`; use my personal shared eslint config
+  * [Tests] up to `io.js` `v3.0`
 
 1.0.0 / 2014-12-15
 =================
