@@ -6,7 +6,9 @@ var getArrowFunctions = function getArrowFunctions() {
 		Function('return () => 42;')(),
 		Function('return () => function () {};')(),
 		Function('return () => x => x * x;')(),
-		Function('return x => x * x;')()
+		Function('return x => x * x;')(),
+		Function('return x => { return x * x; }')(),
+		Function('return (x, y) => { return x + x; }')()
 	];
 };
 var arrowFuncs = [];
