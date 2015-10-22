@@ -37,4 +37,3 @@ test('makeArrowFunction.list() is an array', function (t) {
 	}
 	t.end();
 });
-
