@@ -12,7 +12,7 @@ var getArrowFunctions = function getArrowFunctions() {
 	];
 };
 var arrowFuncs = [];
-try { arrowFuncs = getArrowFunctions(); } catch (e) {/**/}
+try { arrowFuncs = getArrowFunctions(); } catch (e) { /**/ }
 
 module.exports = function makeArrowFunction() {
 	return arrowFuncs[0];
