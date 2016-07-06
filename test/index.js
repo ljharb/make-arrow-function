@@ -25,7 +25,7 @@ test('makeArrowFunction.list() is an array', function (t) {
 		'x => { return x * x; }',
 		'(x, y) => { return x + x; }'
 	];
-	t.plan(1 + 2 * funcs.length);
+	t.plan(1 + (2 * funcs.length));
 	t.equal(Object.prototype.toString.call(funcs), '[object Array]', 'list() is an array');
 	if (funcs.length === 0) {
 		t.comment('no arrow functions present');
