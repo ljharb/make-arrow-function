@@ -1,6 +1,6 @@
 'use strict';
 
-var getArrowFunctions = function getArrowFunctions() {
+var getArrows = function getArrowFunctions() {
 	return [
 		Function('return (a, b) => a * b;')(),
 		Function('return () => 42;')(),
@@ -13,7 +13,7 @@ var getArrowFunctions = function getArrowFunctions() {
 };
 var arrowFuncs = [];
 try {
-	arrowFuncs = getArrowFunctions();
+	arrowFuncs = getArrows();
 } catch (e) { /**/ }
 
 module.exports = function makeArrowFunction() {
