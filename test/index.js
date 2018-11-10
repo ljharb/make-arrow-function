@@ -21,9 +21,12 @@ test('makeArrowFunction.list() is an array', function (t) {
 		'() => 42',
 		'() => function () {}',
 		'() => x => x * x',
+		'y => x => x * x',
 		'x => x * x',
 		'x => { return x * x; }',
-		'(x, y) => { return x + x; }'
+		'(x, y) => { return x + x; }',
+		'(a = Math.random(10)) => {}',
+		'(a = function() {\n\tif (Math.random() < 0.5) { return 42; }\n\treturn "something else";\n}) => a()'
 	];
 	t.plan(1 + (2 * funcs.length));
 	t.equal(Object.prototype.toString.call(funcs), '[object Array]', 'list() is an array');
