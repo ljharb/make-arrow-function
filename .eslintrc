@@ -5,5 +5,14 @@
 
 	"rules": {
 		"no-new-func": [0]
-	}
+	},
+
+	"overrides": [
+		{
+			"files": "test/**",
+			"rules": {
+				"no-magic-numbers": 0,
+			},
+		},
+	],
 }

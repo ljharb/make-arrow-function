@@ -8,10 +8,9 @@
 	"scripts": {
 		"pretest": "npm run --silent lint",
 		"test": "npm run tests-only",
-		"tests-only": "node test/index.js",
+		"tests-only": "node test",
 		"posttest": "npm run audit",
 		"coverage": "covert test/*.js",
-		"coverage-quiet": "covert test/*.js --quiet",
 		"lint": "eslint .",
 		"preaudit": "npm install --package-lock --package-lock-only",
 		"audit": "npm audit",
@@ -34,8 +33,8 @@
 	"devDependencies": {
 		"@ljharb/eslint-config": "^13.1.1",
 		"covert": "^1.1.1",
-		"eslint": "^5.12.0",
-		"tape": "^4.9.2"
+		"eslint": "^5.16.0",
+		"tape": "^4.11.0"
 	},
 	"testling": {
 		"files": "test/index.js",
