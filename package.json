@@ -2,6 +2,9 @@
 	"name": "make-arrow-function",
 	"version": "1.1.0",
 	"author": "Jordan Harband",
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"description": "Function that returns an arbitrary arrow function, or undefined if arrow function syntax is unsupported.",
 	"license": "MIT",
 	"main": "index.js",
