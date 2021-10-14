@@ -9,8 +9,6 @@
 
 [![npm badge][npm-badge-png]][package-url]
 
-[![browser support][testling-svg]][testling-url]
-
 Function that returns an arbitrary arrow function, or undefined if arrow function syntax is unsupported.
 
 ## Example
@@ -35,8 +33,6 @@ Simply clone the repo, `npm install`, and run `npm test`
 [deps-url]: https://david-dm.org/ljharb/make-arrow-function
 [dev-deps-svg]: https://david-dm.org/ljharb/make-arrow-function/dev-status.svg
 [dev-deps-url]: https://david-dm.org/ljharb/make-arrow-function#info=devDependencies
-[testling-svg]: https://ci.testling.com/ljharb/make-arrow-function.png
-[testling-url]: https://ci.testling.com/ljharb/make-arrow-function
 [npm-badge-png]: https://nodei.co/npm/make-arrow-function.png?downloads=true&stars=true
 [license-image]: https://img.shields.io/npm/l/make-arrow-function.svg
 [license-url]: LICENSE
